@@ -15,7 +15,19 @@ Ammirate, Voi Potenti, la mia opera e disperate!»
 Nulla d/altro rimane. Intorno alle rovine
 Di quel rudere colossale, spoglie e sterminate,
 Le piatte sabbie solitarie si estendono oltre confine”';
+
+$lenght = strlen($poetry);
+$word = $_GET['word'];
+$newText = str_replace($word, 'Oxymandias', $title);
+$netTitle = 'Oxymandias - Re dei Re';
+
 ?>
+
+
 
 <h1><?= $title ?> </h1>
 <p><?= $poetry ?> </p>
+<p>il testo contiene <?php echo $lenght; ?> caratteri</p>
+
+<h1> <?= $newTitle ?> </h1>
+<p> <?= $newText ?> </p>
